@@ -11,7 +11,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-//@EnableGlobalMethodSecurity
 //@Order(-1)
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
@@ -25,12 +24,6 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-//    @Bean
-//    @Override
-//    protected AuthenticationManager authenticationManager() throws Exception {
-//        return super.authenticationManager();
-//    }
-//
     /**
      * 基于内存的用户权限配置
      * @return
@@ -55,30 +48,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf().disable()
                 .httpBasic();
-//        http.cors().and()
-//                .csrf().disable()
-//                .httpBasic();
-//        http.formLogin().and()
-//                .antMatchers("/login","/oauth/*").permitAll()
-//                .authorizeRequests()
-//                .anyRequest()
-//                .authenticated()
                 ;//设置符合条件的端点通过，不被保护
     }
 
-//    @Bean
-//    @Override
-//    public UserDetailsService userDetailsService(){
-//        return new UserDetailsServiceImpl();
-//    }
-//
-//    /**
-//     * 基于 jdbc 权限配置
-//     * @param auth
-//     * @throws Exception
-//     */
-//    @Override
-//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//        auth.userDetailsService(userDetailsService());
-//    }
+
 }

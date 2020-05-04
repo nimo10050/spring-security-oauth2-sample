@@ -30,6 +30,7 @@
             <version>2.1.6.RELEASE</version>
         </dependency>
 
+        <!-- fastjson-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>

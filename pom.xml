@@ -12,7 +12,6 @@
 
     <modules>
         <module>qq-oauth2</module>
-        <module>oauth2-common</module>
         <module>weibo-demo</module>
     </modules>
 

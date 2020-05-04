@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-//@MapperScan(basePackages = "com.nimo.oauth.mapper")
 @RestController
 public class QQOauth2ServerApplication {
 

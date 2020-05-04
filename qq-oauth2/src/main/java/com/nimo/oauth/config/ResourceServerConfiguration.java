@@ -11,10 +11,6 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-//        http.authorizeRequests().antMatchers("/qq/oauth/token").permitAll()
-//                .anyRequest().authenticated().and()
-//                .requestMatchers().antMatchers("/qq/hello");
-
         http.authorizeRequests()
                 .anyRequest()
                 .authenticated()
