@@ -27,7 +27,7 @@ public class AuthController {
      */
     @RequestMapping("oauth/authorize/callback")
     public ModelAndView getAuthorizeCode(String code) {
-        // 1.通过授权码，获取 token
+        // 1. 拿到 qq 传来的 授权码code，再次发送请求到qq 认证中心获取 token
         String accessToken = sendGetTokenRequest(code);
         // 2. 通过 token，获取用户信息
         HttpHeaders headers1 = new HttpHeaders();

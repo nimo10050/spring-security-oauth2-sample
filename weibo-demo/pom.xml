@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.nimo</groupId>
-    <artifactId>oauth2-demo</artifactId>
+    <artifactId>weibo-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>oauth2-demo</name>
+    <name>weibo-demo</name>
 
     <properties>
         <java.version>1.8</java.version>
